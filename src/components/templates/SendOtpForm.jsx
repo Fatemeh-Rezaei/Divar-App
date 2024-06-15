@@ -1,19 +1,19 @@
-import toast, { Toaster } from "react-hot-toast";
+import toast from "react-hot-toast";
 import { sendOtp } from "../../services/auth";
 
 function SendOtpForm({ mobile, setMobile, setStep }) {
   const submitHandler = async (e) => {
     e.preventDefault();
 
-    if(mobile.length !== 11) return
+    if (mobile.length !== 11) return;
 
-    const {response , error} = await sendOtp(mobile)
+    const { response, error } = await sendOtp(mobile);
 
-    if(response) setStep(2)
+    if (response) setStep(2);
 
-    if(error) toast.error(error.response.data.message)
+    if (error) toast.error(error.response.data.message);
 
-    console.log({response , error});
+    console.log({ response, error });
   };
 
   return (
@@ -32,7 +32,6 @@ function SendOtpForm({ mobile, setMobile, setStep }) {
         onChange={(e) => setMobile(e.target.value)}
       />
       <button type="submit">ارسال کد تایید</button>
-      <Toaster />
     </form>
   );
 }
