@@ -1,5 +1,5 @@
 import toast from "react-hot-toast";
-import { sendOtp } from "../../services/auth";
+import { sendOtp } from "services/auth";
 
 function SendOtpForm({ mobile, setMobile, setStep }) {
   const submitHandler = async (e) => {
