@@ -7,6 +7,7 @@ import DashboardPage from "pages/DashboardPage";
 import AdminPage from "pages/AdminPage";
 import PageNotFound from "pages/404";
 import { getProfile } from "services/user";
+import Loader from "components/modules/Loader";
 
 function Router() {
   const { data, isFetching, error } = useQuery({
@@ -16,7 +17,7 @@ function Router() {
 
   console.log({ data, isFetching, error });
 
-  if (isFetching) return <h1>Loading...</h1>;
+  if (isFetching) return <Loader />;
 
   return (
     <Routes>
