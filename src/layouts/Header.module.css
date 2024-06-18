@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid rgb(234, 234, 234);
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 45px;
+  margin-left: 40px;
+}
+
+.header div {
+  display: flex;
+}
+
+.header span {
+  display: flex;
+  align-items: center;
+  color: gray;
+  height: 50px;
+}
+
+.header span p {
+  margin-right: 5px;
+  font-size: 0.9rem;
+}
+
+.button {
+  background-color: #a62626;
+  color: #fff;
+  height: 40px;
+  width: 80px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 5px;
+  margin-right: 40px;
+}
