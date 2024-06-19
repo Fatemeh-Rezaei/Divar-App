@@ -15,7 +15,7 @@ function Router() {
     queryFn: getProfile,
   });
 
-  console.log({ data, isFetching, error });
+  // console.log({ data, isFetching, error });
 
   if (isFetching) return <Loader />;
 
