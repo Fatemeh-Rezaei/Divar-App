@@ -1,5 +1,5 @@
-import CategoryForm from "components/templates/CategoryForm"
-import CategoryList from "components/templates/CategoryList"
+import CategoryForm from "components/templates/CategoryForm";
+import CategoryList from "components/templates/CategoryList";
 
 function AdminPage() {
   return (
@@ -7,7 +7,7 @@ function AdminPage() {
       <CategoryList />
       <CategoryForm />
     </div>
-  )
+  );
 }
 
-export default AdminPage
+export default AdminPage;

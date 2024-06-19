@@ -24,6 +24,8 @@ a {
 
 button,
 input,
-select {
+select,
+option,
+textarea {
   font-family: inherit;
 }

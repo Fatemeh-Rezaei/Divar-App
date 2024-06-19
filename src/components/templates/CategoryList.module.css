@@ -4,10 +4,16 @@
 
 .list div {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: 20px 0;
   padding: 15px;
   border: 2px solid #eaeaea;
   border-radius: 5px;
+}
+
+.list div > div {
+  border: none;
 }
 
 .list h5 {
@@ -20,4 +26,23 @@
   width: 100%;
   text-align: left;
   color: #a62626;
+}
+
+.list .left {
+  width: 250px;
+  border: none;
+}
+
+.list .left button {
+  background-color: #a62626;
+  border: none;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.list .left button:hover {
+  opacity: 0.9;
 }
