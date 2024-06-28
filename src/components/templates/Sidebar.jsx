@@ -1,7 +1,6 @@
 import styles from "./Sidebar.module.css";
 
 function Sidebar({categories}) {
-  console.log("category",categories);
   return (
     <div className={styles.sidebar}>
       <h4>دسته ها</h4>

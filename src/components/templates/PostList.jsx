@@ -22,7 +22,6 @@ function PostList() {
           <h3>آگهی های شما</h3>
           {data?.data.posts.map((post) => (
             <div key={post._id} className={styles.post}>
-              {console.log(`${baseURL}${post.images[0]}`)}
               <img src={`${baseURL}${post.images[0]}`} />
               <div>
                 <p>{post.options?.title}</p>

@@ -12,7 +12,6 @@ function CategoryForm() {
     mutationFn: addCategory,
     onSuccess: () => queryClient.invalidateQueries("get-categories"),
   });
-  //   console.log({ isPending, error, data });
 
   const changeHandler = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });

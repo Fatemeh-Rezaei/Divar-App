@@ -4,7 +4,7 @@ import styles from "./Main.module.css";
 
 function Main({ posts }) {
   const baseURL = import.meta.env.VITE_BASE_URL;
-  console.log(posts);
+
   return (
     <div className={styles.container}>
       {posts.data.posts.map((post) => (

@@ -16,7 +16,6 @@ function SendOtpForm({ mobile, setMobile, setStep }) {
 
     if (error) toast.error(error.response.data.message);
 
-    console.log({ response, error });
   };
 
   return (

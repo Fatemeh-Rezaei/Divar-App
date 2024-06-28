@@ -23,8 +23,6 @@ function CategoryList() {
     },
   });
 
-  console.log({ data, isFetching });
-
   const deleteHandler = (id) => {
     mutate(id);
   };
